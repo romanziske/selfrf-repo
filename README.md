@@ -11,13 +11,6 @@ pip install git+https://github.com/TorchDSP/torchsig.git
 # Install detectron2
 pip install git+https://github.com/facebookresearch/detectron2.git
 
-# Install rf-detr
-pip install rfdetr
-
-# Install ultralytics (YOLO)
-pip install ultralytics
-
-
 # Install this package in development mode
 pip install -e .
 ```
@@ -41,7 +34,7 @@ python tools/pretraining.py --num-epochs 300 --batch-size 128 --backbone resnet5
 MAE:
 
 ```bash
-python tools/pretraining.py --num-epochs 300 --batch-size 512 --backbone vit_base --ssl-model mae --spectrogram true --root datasets/50k --num-samples 50000
+python tools/pretraining.py --num-epochs 600 --batch-size 512 --backbone vit_base --ssl-model mae --spectrogram true --root datasets/50k --num-samples 50000
 ```
 
 ### Finetuning
